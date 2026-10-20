@@ -2,9 +2,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {execFileSync} from 'node:child_process';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, f), 'utf8'));
+
+const embedFonts = () => execFileSync(process.execPath, [path.join(ROOT, 'scripts/embed-fonts.mjs')], {stdio: 'inherit'});
 
 export const STYLES = ['solid', 'outline', 'underline', 'glitch', 'speed', 'typewriter'];
 export const SCENES = ['voice', 'family', 'map', 'contact', 'game', 'clear', 'chat', 'wallet'];
@@ -17,6 +20,7 @@ const hash = (n) => {
 };
 
 export function buildData() {
+	embedFonts();
 	const cfg = read('config.json');
 	const timings = read('timings.json');
 	const audio = read('audio.json');

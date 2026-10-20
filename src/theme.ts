@@ -1,34 +1,24 @@
-import {continueRender, delayRender, staticFile} from 'remotion';
-import {loadFont} from '@remotion/fonts';
+import {continueRender, delayRender} from 'remotion';
+import {FONT_DATA} from './generated/fonts';
 
-// local woff2 files (public/fonts) so every render tab gets Cyrillic glyphs without a network fetch
+// fonts are embedded as base64 (scripts/embed-fonts.mjs): no network fetch inside render tabs
 const RANGES: Record<string, string> = {
 	latin: 'U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD',
 	'latin-ext': 'U+0100-02AF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF',
 	cyrillic: 'U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116',
 };
-const FILES: [string, string, string, string][] = [
-	['Inter', 'inter', '800', 'latin'],
-	['Inter', 'inter', '900', 'latin'],
-	['Inter', 'inter', '800', 'latin-ext'],
-	['Inter', 'inter', '900', 'latin-ext'],
-	['Inter', 'inter', '800', 'cyrillic'],
-	['Inter', 'inter', '900', 'cyrillic'],
-	['JetBrains Mono', 'jetbrains-mono', '500', 'latin'],
-	['JetBrains Mono', 'jetbrains-mono', '700', 'latin'],
-	['JetBrains Mono', 'jetbrains-mono', '500', 'cyrillic'],
-	['JetBrains Mono', 'jetbrains-mono', '700', 'cyrillic'],
-];
+const FAMILIES: Record<string, string> = {inter: 'Inter', 'jetbrains-mono': 'JetBrains Mono'};
+
+const b64 = (s: string) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0)).buffer;
+
 const fontHandle = delayRender('fonts');
 Promise.all(
-	FILES.map(([family, file, weight, subset]) =>
-		loadFont({
-			family,
-			url: staticFile(`fonts/${file}-${subset}-${weight}-normal.woff2`),
-			weight,
-			unicodeRange: RANGES[subset],
-		}),
-	),
+	Object.entries(FONT_DATA).map(([name, data]) => {
+		const m = name.match(/^(inter|jetbrains-mono)-(latin-ext|latin|cyrillic)-(\d+)-normal$/)!;
+		const face = new FontFace(FAMILIES[m[1]], b64(data), {weight: m[3], unicodeRange: RANGES[m[2]]});
+		document.fonts.add(face);
+		return face.load();
+	}),
 )
 	.catch((e) => console.error('font load failed', e))
 	.finally(() => continueRender(fontHandle));
