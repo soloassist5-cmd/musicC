@@ -24,16 +24,22 @@ Promise.all(
 	.finally(() => continueRender(fontHandle));
 
 export const C = {
-	bg: '#EEECE7',
-	black: '#000000',
-	red: '#E3242B',
-	blue: '#1F6FFF',
-	card: '#FBFAF7',
-	border: '#D8D5CE',
-	green: '#17A55B',
-	muted: '#8C8880',
-	soft: '#E4E1DA',
+	ink: '#0B0B10',
+	sub: '#8E8E93',
+	line: '#E5E5EA',
+	fill: '#F2F2F7',
+	card: '#FFFFFF',
+	blue: '#0A84FF',
+	green: '#34C759',
+	red: '#FF3B30',
+	orange: '#FF9F0A',
+	purple: '#AF52DE',
+	pink: '#FF5FA2',
 };
+
+// marker colors for highlighted words, cycled per line
+export const MARKERS = ['#FFE45C', '#FF9ACB', '#B9F46B', '#9CCBFF'];
+export const CONFETTI = ['#FF5FA2', '#0A84FF', '#FFD60A', '#34C759', '#AF52DE', '#FF9F0A', '#5AC8FA'];
 
 export const FONT = "'Inter', sans-serif";
 export const MONO = "'JetBrains Mono', monospace";
@@ -45,14 +51,7 @@ export const SAFE = {left: 72, top: 160, right: W - 160, bottom: H - 480};
 export const SAFE_W = SAFE.right - SAFE.left;
 export const SAFE_CX = (SAFE.left + SAFE.right) / 2;
 
-export const shadow = '0 18px 40px rgba(40,34,24,0.10), 0 2px 6px rgba(40,34,24,0.06)';
-
-export const cardStyle: React.CSSProperties = {
-	background: C.card,
-	border: `2px solid ${C.border}`,
-	borderRadius: 28,
-	boxShadow: shadow,
-};
+export const shadow = '0 40px 90px rgba(70,40,140,0.20), 0 8px 24px rgba(20,10,60,0.08)';
 
 // deterministic pseudo-random in [0,1)
 export const rand = (seed: number) => {

@@ -10,7 +10,7 @@ const read = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, f), 'utf8'));
 const embedFonts = () => execFileSync(process.execPath, [path.join(ROOT, 'scripts/embed-fonts.mjs')], {stdio: 'inherit'});
 
 export const STYLES = ['solid', 'outline', 'underline', 'glitch', 'speed', 'typewriter'];
-export const SCENES = ['voice', 'family', 'map', 'contact', 'game', 'clear', 'chat', 'wallet'];
+export const SCENES = ['alert', 'family', 'map', 'call', 'game', 'storage', 'timer', 'wallet'];
 
 const hash = (n) => {
 	let x = (n + 1) * 2654435761;
@@ -59,7 +59,18 @@ export function buildData() {
 		};
 	});
 
-	const scenes = lines.map((_, li) => cfg.scene_overrides?.[String(li)] ?? SCENES[li % SCENES.length]);
+	// scene plan: [line, wordInLine, kind] -> absolute start times; lines without a plan cycle through SCENES
+	const plan = (cfg.scene_plan ?? []).map(([line, wi, kind]) => ({line, wi, kind}));
+	lines.forEach((_, li) => {
+		if (!plan.some((p) => p.line === li)) plan.push({line: li, wi: 0, kind: SCENES[li % SCENES.length]});
+	});
+	const scenes = plan
+		.map(({line, wi, kind}) => {
+			const lw = words.filter((w) => w.line === line);
+			const w = lw[Math.min(wi, lw.length - 1)];
+			return {kind, line, start: w ? w.start : 0, firstWord: w ? w.i : 0};
+		})
+		.sort((a, b) => a.start - b.start);
 	const f0 = Math.round(startTime * 60);
 	const rms = [];
 	for (let f = 0; f < durationInFrames; f++) {

@@ -1,4 +1,4 @@
-// one frame from the middle of every line -> output/contact_sheet.png
+// one frame from the middle of every scene -> output/contact_sheet.png
 import fs from 'node:fs';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
@@ -15,10 +15,9 @@ fs.mkdirSync(dir, {recursive: true});
 const extra = process.argv.slice(2).map(Number);
 const frames = extra.length
 	? extra
-	: data.lines.map((_, li) => {
-			const ws = data.words.filter((w) => w.line === li);
-			const end = data.words.find((w) => w.line === li + 1)?.start ?? data.duration;
-			return Math.round(((ws[0].start + end) / 2) * data.fps);
+	: data.scenes.map((sc, k) => {
+			const end = data.scenes[k + 1]?.start ?? data.duration;
+			return Math.round(((sc.start + end) / 2) * data.fps);
 		});
 const files = [];
 for (const [k, frame] of frames.entries()) {
@@ -28,7 +27,7 @@ for (const [k, frame] of frames.entries()) {
 	console.log('still', frame);
 }
 if (!extra.length) {
-	const cols = 4;
+	const cols = 7;
 	const rows = Math.ceil(files.length / cols);
 	execFileSync('ffmpeg', [
 		'-v', 'error', '-y',
