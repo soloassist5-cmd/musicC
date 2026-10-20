@@ -11,25 +11,43 @@ const data = buildData();
 console.log(`segment: start ${data.startTime}s, duration ${data.duration}s (${data.durationInFrames} frames @ ${data.fps})`);
 const {serveUrl, composition} = await prepare();
 
+// render in short chunks (a long single browser session occasionally hangs), each retried, then concat
+const CHUNK = 150;
+const chunkDir = path.join(ROOT, 'build/chunks');
+fs.rmSync(chunkDir, {recursive: true, force: true});
+fs.mkdirSync(chunkDir, {recursive: true});
+const parts = [];
+for (let a = 0; a < data.durationInFrames; a += CHUNK) {
+	const b = Math.min(a + CHUNK, data.durationInFrames) - 1;
+	const file = path.join(chunkDir, `part_${String(a).padStart(5, '0')}.mp4`);
+	for (let attempt = 1; ; attempt++) {
+		try {
+			await renderMedia({
+				serveUrl,
+				composition,
+				codec: 'h264',
+				crf: 8,
+				pixelFormat: 'yuv420p',
+				muted: true,
+				frameRange: [a, b],
+				concurrency: 2,
+				timeoutInMilliseconds: 60000,
+				outputLocation: file,
+				browserExecutable,
+			});
+			break;
+		} catch (e) {
+			if (attempt >= 3) throw e;
+			console.log(`chunk ${a}-${b} failed (${String(e.message).slice(0, 80)}), retry ${attempt}`);
+		}
+	}
+	parts.push(file);
+	console.log(`render ${Math.round(((b + 1) / data.durationInFrames) * 100)}%`);
+}
+const list = path.join(chunkDir, 'list.txt');
+fs.writeFileSync(list, parts.map((p) => `file '${p}'`).join('\n'));
 const raw = path.join(ROOT, 'build/raw.mp4');
-let last = -1;
-await renderMedia({
-	serveUrl,
-	composition,
-	codec: 'h264',
-	crf: cfg.crf ?? 15,
-	pixelFormat: 'yuv420p',
-	x264Preset: 'slow',
-	muted: true,
-	concurrency: 2,
-	timeoutInMilliseconds: 120000,
-	outputLocation: raw,
-	browserExecutable,
-	onProgress: ({progress}) => {
-		const p = Math.floor(progress * 20);
-		if (p !== last) console.log(`render ${Math.round(progress * 100)}%`), (last = p);
-	},
-});
+execFileSync('ffmpeg', ['-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', raw], {stdio: 'inherit'});
 
 const out = (f) => path.join(ROOT, 'output', f);
 const ff = (args) => execFileSync('ffmpeg', ['-v', 'error', '-y', ...args], {stdio: 'inherit'});
