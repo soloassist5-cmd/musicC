@@ -2,3 +2,4 @@ node_modules/
 .venv/
 build/
 src/generated/
+__pycache__/
