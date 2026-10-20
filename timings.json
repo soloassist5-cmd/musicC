@@ -1,0 +1,533 @@
+[
+ {
+  "text": "Перестань,",
+  "line": 0,
+  "mark": "accent",
+  "start": 0.08,
+  "end": 0.781,
+  "score": 0.209,
+  "stablets_start": 0.25
+ },
+ {
+  "text": "ведь",
+  "line": 0,
+  "mark": "normal",
+  "start": 0.801,
+  "end": 0.981,
+  "score": 0.032,
+  "stablets_start": 0.9
+ },
+ {
+  "text": "это",
+  "line": 0,
+  "mark": "normal",
+  "start": 1.061,
+  "end": 1.301,
+  "score": 0.199,
+  "stablets_start": 1.16
+ },
+ {
+  "text": "вред,",
+  "line": 0,
+  "mark": "normal",
+  "start": 1.441,
+  "end": 1.821,
+  "score": 0.082,
+  "stablets_start": 1.84
+ },
+ {
+  "text": "нам",
+  "line": 0,
+  "mark": "normal",
+  "start": 1.902,
+  "end": 2.122,
+  "score": 0.386,
+  "stablets_start": 1.94
+ },
+ {
+  "text": "всё",
+  "line": 0,
+  "mark": "normal",
+  "start": 2.122,
+  "end": 2.282,
+  "score": 0.125,
+  "stablets_start": 2.2
+ },
+ {
+  "text": "прятать",
+  "line": 0,
+  "mark": "normal",
+  "start": 2.322,
+  "end": 2.762,
+  "score": 0.119,
+  "stablets_start": 2.46
+ },
+ {
+  "text": "в",
+  "line": 0,
+  "mark": "normal",
+  "start": 2.762,
+  "end": 2.822,
+  "score": 0.0,
+  "stablets_start": 2.86
+ },
+ {
+  "text": "Кав Эмптах",
+  "line": 0,
+  "mark": "pair",
+  "start": 2.822,
+  "end": 3.723,
+  "score": 0.255,
+  "stablets_start": 2.92
+ },
+ {
+  "text": "Твой",
+  "line": 1,
+  "mark": "normal",
+  "start": 3.803,
+  "end": 4.083,
+  "score": 0.05,
+  "stablets_start": 4.06
+ },
+ {
+  "text": "папа",
+  "line": 1,
+  "mark": "normal",
+  "start": 4.183,
+  "end": 4.504,
+  "score": 0.523,
+  "stablets_start": 4.16
+ },
+ {
+  "text": "под",
+  "line": 1,
+  "mark": "normal",
+  "start": 4.624,
+  "end": 4.844,
+  "score": 0.191,
+  "stablets_start": 4.82
+ },
+ {
+  "text": "землёй,",
+  "line": 1,
+  "mark": "normal",
+  "start": 4.884,
+  "end": 5.404,
+  "score": 0.102,
+  "stablets_start": 4.94
+ },
+ {
+  "text": "а",
+  "line": 1,
+  "mark": "normal",
+  "start": 5.404,
+  "end": 5.524,
+  "score": 0.179,
+  "stablets_start": 5.56
+ },
+ {
+  "text": "мама",
+  "line": 1,
+  "mark": "normal",
+  "start": 5.524,
+  "end": 5.865,
+  "score": 0.655,
+  "stablets_start": 5.68
+ },
+ {
+  "text": "летит",
+  "line": 1,
+  "mark": "normal",
+  "start": 5.965,
+  "end": 6.465,
+  "score": 0.099,
+  "stablets_start": 6.48
+ },
+ {
+  "text": "на",
+  "line": 1,
+  "mark": "normal",
+  "start": 6.465,
+  "end": 6.585,
+  "score": 0.382,
+  "stablets_start": 6.58
+ },
+ {
+  "text": "небо",
+  "line": 1,
+  "mark": "accent",
+  "start": 6.705,
+  "end": 7.266,
+  "score": 0.171,
+  "stablets_start": 6.78
+ },
+ {
+  "text": "Кидаешь",
+  "line": 2,
+  "mark": "normal",
+  "start": 7.606,
+  "end": 8.287,
+  "score": 0.457,
+  "stablets_start": 7.6
+ },
+ {
+  "text": "это",
+  "line": 2,
+  "mark": "normal",
+  "start": 8.347,
+  "end": 8.607,
+  "score": 0.129,
+  "stablets_start": 8.4
+ },
+ {
+  "text": "где-то,",
+  "line": 2,
+  "mark": "normal",
+  "start": 8.747,
+  "end": 9.267,
+  "score": 0.17,
+  "stablets_start": 8.74
+ },
+ {
+  "text": "кидаешь",
+  "line": 2,
+  "mark": "normal",
+  "start": 9.407,
+  "end": 10.088,
+  "score": 0.419,
+  "stablets_start": 9.66
+ },
+ {
+  "text": "всё",
+  "line": 2,
+  "mark": "normal",
+  "start": 10.088,
+  "end": 10.208,
+  "score": 0.004,
+  "stablets_start": 10.18
+ },
+ {
+  "text": "с",
+  "line": 2,
+  "mark": "normal",
+  "start": 10.268,
+  "end": 10.328,
+  "score": 0.65,
+  "stablets_start": 10.34
+ },
+ {
+  "text": "кем-то",
+  "line": 2,
+  "mark": "normal",
+  "start": 10.328,
+  "end": 10.889,
+  "score": 0.429,
+  "stablets_start": 10.46
+ },
+ {
+  "text": "Мне",
+  "line": 3,
+  "mark": "normal",
+  "start": 11.009,
+  "end": 11.349,
+  "score": 0.015,
+  "stablets_start": 11.3
+ },
+ {
+  "text": "без",
+  "line": 3,
+  "mark": "normal",
+  "start": 11.449,
+  "end": 11.709,
+  "score": 0.273,
+  "stablets_start": 11.62
+ },
+ {
+  "text": "тебя",
+  "line": 3,
+  "mark": "normal",
+  "start": 11.729,
+  "end": 12.03,
+  "score": 0.252,
+  "stablets_start": 11.76
+ },
+ {
+  "text": "хуёво",
+  "line": 3,
+  "mark": "wall",
+  "start": 12.17,
+  "end": 12.69,
+  "score": 0.16,
+  "stablets_start": 12.18
+ },
+ {
+  "text": "ты",
+  "line": 3,
+  "mark": "normal",
+  "start": 12.83,
+  "end": 13.07,
+  "score": 0.333,
+  "stablets_start": 12.86
+ },
+ {
+  "text": "убила",
+  "line": 3,
+  "mark": "normal",
+  "start": 13.09,
+  "end": 13.691,
+  "score": 0.138,
+  "stablets_start": 13.1
+ },
+ {
+  "text": "рил вэмпа",
+  "line": 3,
+  "mark": "pair",
+  "start": 13.691,
+  "end": 14.512,
+  "score": 0.026,
+  "stablets_start": 13.76
+ },
+ {
+  "text": "Перестать",
+  "line": 4,
+  "mark": "normal",
+  "start": 14.672,
+  "end": 15.312,
+  "score": 0.256,
+  "stablets_start": 14.66
+ },
+ {
+  "text": "ебать",
+  "line": 4,
+  "mark": "normal",
+  "start": 15.372,
+  "end": 15.773,
+  "score": 0.285,
+  "stablets_start": 15.46
+ },
+ {
+  "text": "игру?",
+  "line": 4,
+  "mark": "accent",
+  "start": 15.833,
+  "end": 16.133,
+  "score": 0.181,
+  "stablets_start": 15.96
+ },
+ {
+  "text": "Но,",
+  "line": 4,
+  "mark": "normal",
+  "start": 16.453,
+  "end": 16.573,
+  "score": 0.29,
+  "stablets_start": 16.44
+ },
+ {
+  "text": "сорян,",
+  "line": 4,
+  "mark": "normal",
+  "start": 16.673,
+  "end": 17.154,
+  "score": 0.189,
+  "stablets_start": 16.7
+ },
+ {
+  "text": "не",
+  "line": 4,
+  "mark": "normal",
+  "start": 17.194,
+  "end": 17.314,
+  "score": 0.041,
+  "stablets_start": 17.24
+ },
+ {
+  "text": "могу",
+  "line": 4,
+  "mark": "normal",
+  "start": 17.354,
+  "end": 17.714,
+  "score": 0.133,
+  "stablets_start": 17.38
+ },
+ {
+  "text": "Я",
+  "line": 5,
+  "mark": "normal",
+  "start": 18.054,
+  "end": 18.174,
+  "score": 0.125,
+  "stablets_start": 17.88
+ },
+ {
+  "text": "бросил",
+  "line": 5,
+  "mark": "normal",
+  "start": 18.235,
+  "end": 18.635,
+  "score": 0.058,
+  "stablets_start": 18.26
+ },
+ {
+  "text": "всю",
+  "line": 5,
+  "mark": "normal",
+  "start": 18.635,
+  "end": 18.835,
+  "score": 0.05,
+  "stablets_start": 18.74
+ },
+ {
+  "text": "свою",
+  "line": 5,
+  "mark": "normal",
+  "start": 18.955,
+  "end": 19.295,
+  "score": 0.079,
+  "stablets_start": 18.94
+ },
+ {
+  "text": "дешёвую",
+  "line": 5,
+  "mark": "normal",
+  "start": 19.435,
+  "end": 20.216,
+  "score": 0.082,
+  "stablets_start": 19.46
+ },
+ {
+  "text": "тупую",
+  "line": 5,
+  "mark": "normal",
+  "start": 20.336,
+  "end": 20.897,
+  "score": 0.072,
+  "stablets_start": 20.32
+ },
+ {
+  "text": "хуйню",
+  "line": 5,
+  "mark": "normal",
+  "start": 21.017,
+  "end": 21.397,
+  "score": 0.072,
+  "stablets_start": 20.98
+ },
+ {
+  "text": "«Тебе",
+  "line": 6,
+  "mark": "normal",
+  "start": 21.737,
+  "end": 22.038,
+  "score": 0.126,
+  "stablets_start": 21.64
+ },
+ {
+  "text": "придётся",
+  "line": 6,
+  "mark": "normal",
+  "start": 22.138,
+  "end": 22.778,
+  "score": 0.163,
+  "stablets_start": 22.24
+ },
+ {
+  "text": "отсидеть»,",
+  "line": 6,
+  "mark": "normal",
+  "start": 22.918,
+  "end": 23.539,
+  "score": 0.009,
+  "stablets_start": 23.46
+ },
+ {
+  "text": "да",
+  "line": 6,
+  "mark": "normal",
+  "start": 23.559,
+  "end": 23.679,
+  "score": 0.018,
+  "stablets_start": 23.56
+ },
+ {
+  "text": "нет,",
+  "line": 6,
+  "mark": "normal",
+  "start": 23.739,
+  "end": 23.959,
+  "score": 0.01,
+  "stablets_start": 23.84
+ },
+ {
+  "text": "братан,",
+  "line": 6,
+  "mark": "normal",
+  "start": 23.999,
+  "end": 24.439,
+  "score": 0.025,
+  "stablets_start": 24.04
+ },
+ {
+  "text": "отстою",
+  "line": 6,
+  "mark": "accent",
+  "start": 24.5,
+  "end": 25.06,
+  "score": 0.006,
+  "stablets_start": 24.8
+ },
+ {
+  "text": "Меня",
+  "line": 7,
+  "mark": "normal",
+  "start": 25.38,
+  "end": 25.68,
+  "score": 0.021,
+  "stablets_start": 25.4
+ },
+ {
+  "text": "меняют",
+  "line": 7,
+  "mark": "normal",
+  "start": 25.841,
+  "end": 26.461,
+  "score": 0.021,
+  "stablets_start": 25.82
+ },
+ {
+  "text": "эти",
+  "line": 7,
+  "mark": "normal",
+  "start": 26.521,
+  "end": 26.801,
+  "score": 0.017,
+  "stablets_start": 26.56
+ },
+ {
+  "text": "деньги",
+  "line": 7,
+  "mark": "wall",
+  "start": 26.921,
+  "end": 27.282,
+  "score": 0.016,
+  "stablets_start": 26.92
+ },
+ {
+  "text": "покупаю",
+  "line": 7,
+  "mark": "normal",
+  "start": 27.382,
+  "end": 28.162,
+  "score": 0.052,
+  "stablets_start": 27.34
+ },
+ {
+  "text": "продукт",
+  "line": 7,
+  "mark": "normal",
+  "start": 28.262,
+  "end": 29.143,
+  "score": 0.058,
+  "stablets_start": 28.28
+ }
+]

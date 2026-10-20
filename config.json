@@ -1,0 +1,9 @@
+{
+  "offset_ms": 0,
+  "lead_in": 0.5,
+  "tail": 1.0,
+  "fps": 60,
+  "crf": 15,
+  "style_overrides": {},
+  "scene_overrides": {}
+}
