@@ -29,7 +29,9 @@ Promise.all(
 			unicodeRange: RANGES[subset],
 		}),
 	),
-).then(() => continueRender(fontHandle));
+)
+	.catch((e) => console.error('font load failed', e))
+	.finally(() => continueRender(fontHandle));
 
 export const C = {
 	bg: '#EEECE7',

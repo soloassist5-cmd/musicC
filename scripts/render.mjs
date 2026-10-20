@@ -21,6 +21,8 @@ await renderMedia({
 	pixelFormat: 'yuv420p',
 	x264Preset: 'slow',
 	muted: true,
+	concurrency: 2,
+	timeoutInMilliseconds: 120000,
 	outputLocation: raw,
 	browserExecutable,
 	onProgress: ({progress}) => {
