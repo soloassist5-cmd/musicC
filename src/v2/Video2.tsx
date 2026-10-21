@@ -107,7 +107,7 @@ const Hud: React.FC<{tl: Timeline; scene: number}> = ({tl, scene}) => {
 				<div style={{position: 'absolute', left: progress * SAFE_W - 2, bottom: -6, width: 4, height: 40, borderRadius: 2, background: C.red}} />
 			</div>
 			<div style={{...txt, left: SAFE.left, top: rulerY + 44}}>LINE {pad(Math.max(0, tl.line) + 1)}/{pad(DATA.lines.length)}</div>
-			<div style={{...txt, right: W - SAFE.right, top: rulerY + 44}}>BPM {DATA.bpm}</div>
+			<div style={{...txt, right: W - SAFE.right, top: rulerY + 44}}>BPM {DATA.bpm || '—'}</div>
 		</>
 	);
 };

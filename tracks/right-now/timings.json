@@ -1,0 +1,866 @@
+[
+ {
+  "text": "Папа",
+  "line": 0,
+  "mark": "normal",
+  "start": 0.5,
+  "end": 0.864,
+  "estimated": true
+ },
+ {
+  "text": "вышел",
+  "line": 0,
+  "mark": "normal",
+  "start": 0.864,
+  "end": 1.227,
+  "estimated": true
+ },
+ {
+  "text": "на",
+  "line": 0,
+  "mark": "normal",
+  "start": 1.227,
+  "end": 1.409,
+  "estimated": true
+ },
+ {
+  "text": "работу,",
+  "line": 0,
+  "mark": "normal",
+  "start": 1.409,
+  "end": 1.955,
+  "estimated": true
+ },
+ {
+  "text": "ведь",
+  "line": 0,
+  "mark": "normal",
+  "start": 1.955,
+  "end": 2.136,
+  "estimated": true
+ },
+ {
+  "text": "сегодня",
+  "line": 0,
+  "mark": "normal",
+  "start": 2.136,
+  "end": 2.682,
+  "estimated": true
+ },
+ {
+  "text": "понедельник",
+  "line": 0,
+  "mark": "accent",
+  "start": 2.682,
+  "end": 3.409,
+  "estimated": true
+ },
+ {
+  "text": "(Work;",
+  "line": 0,
+  "mark": "normal",
+  "start": 3.409,
+  "end": 3.629,
+  "estimated": true
+ },
+ {
+  "text": "У-у-у)",
+  "line": 0,
+  "mark": "normal",
+  "start": 3.629,
+  "end": 3.849,
+  "estimated": true
+ },
+ {
+  "text": "Она",
+  "line": 1,
+  "mark": "normal",
+  "start": 4.149,
+  "end": 4.513,
+  "estimated": true
+ },
+ {
+  "text": "знает,",
+  "line": 1,
+  "mark": "normal",
+  "start": 4.513,
+  "end": 4.876,
+  "estimated": true
+ },
+ {
+  "text": "я",
+  "line": 1,
+  "mark": "normal",
+  "start": 4.876,
+  "end": 5.058,
+  "estimated": true
+ },
+ {
+  "text": "тот",
+  "line": 1,
+  "mark": "normal",
+  "start": 5.058,
+  "end": 5.24,
+  "estimated": true
+ },
+ {
+  "text": "белый,",
+  "line": 1,
+  "mark": "normal",
+  "start": 5.24,
+  "end": 5.604,
+  "estimated": true
+ },
+ {
+  "text": "знает,",
+  "line": 1,
+  "mark": "normal",
+  "start": 5.604,
+  "end": 5.967,
+  "estimated": true
+ },
+ {
+  "text": "что",
+  "line": 1,
+  "mark": "normal",
+  "start": 5.967,
+  "end": 6.149,
+  "estimated": true
+ },
+ {
+  "text": "я",
+  "line": 1,
+  "mark": "normal",
+  "start": 6.149,
+  "end": 6.331,
+  "estimated": true
+ },
+ {
+  "text": "не",
+  "line": 1,
+  "mark": "normal",
+  "start": 6.331,
+  "end": 6.513,
+  "estimated": true
+ },
+ {
+  "text": "бездельник",
+  "line": 1,
+  "mark": "accent",
+  "start": 6.513,
+  "end": 7.058,
+  "estimated": true
+ },
+ {
+  "text": "(Нет)",
+  "line": 1,
+  "mark": "normal",
+  "start": 7.058,
+  "end": 7.278,
+  "estimated": true
+ },
+ {
+  "text": "Обещал",
+  "line": 2,
+  "mark": "normal",
+  "start": 7.578,
+  "end": 8.124,
+  "estimated": true
+ },
+ {
+  "text": "я",
+  "line": 2,
+  "mark": "normal",
+  "start": 8.124,
+  "end": 8.305,
+  "estimated": true
+ },
+ {
+  "text": "её",
+  "line": 2,
+  "mark": "normal",
+  "start": 8.305,
+  "end": 8.669,
+  "estimated": true
+ },
+ {
+  "text": "маме,",
+  "line": 2,
+  "mark": "normal",
+  "start": 8.669,
+  "end": 9.033,
+  "estimated": true
+ },
+ {
+  "text": "что",
+  "line": 2,
+  "mark": "normal",
+  "start": 9.033,
+  "end": 9.215,
+  "estimated": true
+ },
+ {
+  "text": "не",
+  "line": 2,
+  "mark": "normal",
+  "start": 9.215,
+  "end": 9.396,
+  "estimated": true
+ },
+ {
+  "text": "будем",
+  "line": 2,
+  "mark": "normal",
+  "start": 9.396,
+  "end": 9.76,
+  "estimated": true
+ },
+ {
+  "text": "мы",
+  "line": 2,
+  "mark": "normal",
+  "start": 9.76,
+  "end": 9.942,
+  "estimated": true
+ },
+ {
+  "text": "без",
+  "line": 2,
+  "mark": "normal",
+  "start": 9.942,
+  "end": 10.124,
+  "estimated": true
+ },
+ {
+  "text": "денег",
+  "line": 2,
+  "mark": "accent",
+  "start": 10.124,
+  "end": 10.487,
+  "estimated": true
+ },
+ {
+  "text": "И",
+  "line": 3,
+  "mark": "normal",
+  "start": 10.787,
+  "end": 10.969,
+  "estimated": true
+ },
+ {
+  "text": "обещал",
+  "line": 3,
+  "mark": "normal",
+  "start": 10.969,
+  "end": 11.515,
+  "estimated": true
+ },
+ {
+  "text": "её",
+  "line": 3,
+  "mark": "normal",
+  "start": 11.515,
+  "end": 11.878,
+  "estimated": true
+ },
+ {
+  "text": "бате,",
+  "line": 3,
+  "mark": "normal",
+  "start": 11.878,
+  "end": 12.242,
+  "estimated": true
+ },
+ {
+  "text": "что",
+  "line": 3,
+  "mark": "normal",
+  "start": 12.242,
+  "end": 12.424,
+  "estimated": true
+ },
+ {
+  "text": "куплю",
+  "line": 3,
+  "mark": "normal",
+  "start": 12.424,
+  "end": 12.787,
+  "estimated": true
+ },
+ {
+  "text": "им",
+  "line": 3,
+  "mark": "normal",
+  "start": 12.787,
+  "end": 12.969,
+  "estimated": true
+ },
+ {
+  "text": "новый",
+  "line": 3,
+  "mark": "normal",
+  "start": 12.969,
+  "end": 13.333,
+  "estimated": true
+ },
+ {
+  "text": "телек",
+  "line": 3,
+  "mark": "accent",
+  "start": 13.333,
+  "end": 13.696,
+  "estimated": true
+ },
+ {
+  "text": "Чё",
+  "line": 4,
+  "mark": "normal",
+  "start": 13.996,
+  "end": 14.178,
+  "estimated": true
+ },
+ {
+  "text": "за",
+  "line": 4,
+  "mark": "normal",
+  "start": 14.178,
+  "end": 14.36,
+  "estimated": true
+ },
+ {
+  "text": "парень",
+  "line": 4,
+  "mark": "normal",
+  "start": 14.36,
+  "end": 14.724,
+  "estimated": true
+ },
+ {
+  "text": "подошёл",
+  "line": 4,
+  "mark": "normal",
+  "start": 14.724,
+  "end": 15.269,
+  "estimated": true
+ },
+ {
+  "text": "к",
+  "line": 4,
+  "mark": "normal",
+  "start": 15.269,
+  "end": 15.451,
+  "estimated": true
+ },
+ {
+  "text": "тебе?",
+  "line": 4,
+  "mark": "normal",
+  "start": 15.451,
+  "end": 15.815,
+  "estimated": true
+ },
+ {
+  "text": "(Стоп)",
+  "line": 4,
+  "mark": "accent",
+  "start": 15.815,
+  "end": 16.035,
+  "estimated": true
+ },
+ {
+  "text": "Съебал",
+  "line": 5,
+  "mark": "wall",
+  "start": 16.335,
+  "end": 16.698,
+  "estimated": true
+ },
+ {
+  "text": "нахуй",
+  "line": 5,
+  "mark": "normal",
+  "start": 16.698,
+  "end": 17.062,
+  "estimated": true
+ },
+ {
+  "text": "(Пау,",
+  "line": 5,
+  "mark": "normal",
+  "start": 17.062,
+  "end": 17.282,
+  "estimated": true
+ },
+ {
+  "text": "пау-пау-пау-пау!)",
+  "line": 5,
+  "mark": "normal",
+  "start": 17.282,
+  "end": 17.502,
+  "estimated": true
+ },
+ {
+  "text": "Я",
+  "line": 6,
+  "mark": "normal",
+  "start": 17.802,
+  "end": 17.984,
+  "estimated": true
+ },
+ {
+  "text": "бью",
+  "line": 6,
+  "mark": "normal",
+  "start": 17.984,
+  "end": 18.165,
+  "estimated": true
+ },
+ {
+  "text": "в",
+  "line": 6,
+  "mark": "normal",
+  "start": 18.165,
+  "end": 18.347,
+  "estimated": true
+ },
+ {
+  "text": "ебало,",
+  "line": 6,
+  "mark": "normal",
+  "start": 18.347,
+  "end": 18.893,
+  "estimated": true
+ },
+ {
+  "text": "нахуй",
+  "line": 6,
+  "mark": "normal",
+  "start": 18.893,
+  "end": 19.256,
+  "estimated": true
+ },
+ {
+  "text": "(Fah)",
+  "line": 6,
+  "mark": "normal",
+  "start": 19.256,
+  "end": 19.476,
+  "estimated": true
+ },
+ {
+  "text": "Прыгнул",
+  "line": 7,
+  "mark": "normal",
+  "start": 19.776,
+  "end": 20.14,
+  "estimated": true
+ },
+ {
+  "text": "в",
+  "line": 7,
+  "mark": "normal",
+  "start": 20.14,
+  "end": 20.322,
+  "estimated": true
+ },
+ {
+  "text": "новый",
+  "line": 7,
+  "mark": "normal",
+  "start": 20.322,
+  "end": 20.685,
+  "estimated": true
+ },
+ {
+  "text": "Тахо,",
+  "line": 7,
+  "mark": "accent",
+  "start": 20.685,
+  "end": 21.049,
+  "estimated": true
+ },
+ {
+  "text": "меня",
+  "line": 7,
+  "mark": "normal",
+  "start": 21.049,
+  "end": 21.413,
+  "estimated": true
+ },
+ {
+  "text": "ничего",
+  "line": 7,
+  "mark": "normal",
+  "start": 21.413,
+  "end": 21.958,
+  "estimated": true
+ },
+ {
+  "text": "не",
+  "line": 7,
+  "mark": "normal",
+  "start": 21.958,
+  "end": 22.14,
+  "estimated": true
+ },
+ {
+  "text": "парит",
+  "line": 7,
+  "mark": "normal",
+  "start": 22.14,
+  "end": 22.504,
+  "estimated": true
+ },
+ {
+  "text": "А",
+  "line": 8,
+  "mark": "normal",
+  "start": 22.804,
+  "end": 22.985,
+  "estimated": true
+ },
+ {
+  "text": "из",
+  "line": 8,
+  "mark": "normal",
+  "start": 22.985,
+  "end": 23.167,
+  "estimated": true
+ },
+ {
+  "text": "клуба",
+  "line": 8,
+  "mark": "normal",
+  "start": 23.167,
+  "end": 23.531,
+  "estimated": true
+ },
+ {
+  "text": "нас",
+  "line": 8,
+  "mark": "normal",
+  "start": 23.531,
+  "end": 23.713,
+  "estimated": true
+ },
+ {
+  "text": "не",
+  "line": 8,
+  "mark": "normal",
+  "start": 23.713,
+  "end": 23.895,
+  "estimated": true
+ },
+ {
+  "text": "выгонят,",
+  "line": 8,
+  "mark": "normal",
+  "start": 23.895,
+  "end": 24.44,
+  "estimated": true
+ },
+ {
+  "text": "ведь",
+  "line": 8,
+  "mark": "normal",
+  "start": 24.44,
+  "end": 24.622,
+  "estimated": true
+ },
+ {
+  "text": "меня",
+  "line": 8,
+  "mark": "normal",
+  "start": 24.622,
+  "end": 24.985,
+  "estimated": true
+ },
+ {
+  "text": "там",
+  "line": 8,
+  "mark": "normal",
+  "start": 24.985,
+  "end": 25.167,
+  "estimated": true
+ },
+ {
+  "text": "все",
+  "line": 8,
+  "mark": "normal",
+  "start": 25.167,
+  "end": 25.349,
+  "estimated": true
+ },
+ {
+  "text": "знают",
+  "line": 8,
+  "mark": "normal",
+  "start": 25.349,
+  "end": 25.713,
+  "estimated": true
+ },
+ {
+  "text": "(VIP-guest)",
+  "line": 8,
+  "mark": "accent",
+  "start": 25.713,
+  "end": 25.933,
+  "estimated": true
+ },
+ {
+  "text": "И",
+  "line": 9,
+  "mark": "normal",
+  "start": 26.233,
+  "end": 26.415,
+  "estimated": true
+ },
+ {
+  "text": "мы",
+  "line": 9,
+  "mark": "normal",
+  "start": 26.415,
+  "end": 26.596,
+  "estimated": true
+ },
+ {
+  "text": "едем",
+  "line": 9,
+  "mark": "normal",
+  "start": 26.596,
+  "end": 26.96,
+  "estimated": true
+ },
+ {
+  "text": "быстро",
+  "line": 9,
+  "mark": "normal",
+  "start": 26.96,
+  "end": 27.324,
+  "estimated": true
+ },
+ {
+  "text": "на",
+  "line": 9,
+  "mark": "normal",
+  "start": 27.324,
+  "end": 27.505,
+  "estimated": true
+ },
+ {
+  "text": "Феррари,",
+  "line": 9,
+  "mark": "accent",
+  "start": 27.505,
+  "end": 28.051,
+  "estimated": true
+ },
+ {
+  "text": "е-е",
+  "line": 9,
+  "mark": "normal",
+  "start": 28.051,
+  "end": 28.415,
+  "estimated": true
+ },
+ {
+  "text": "(Skrrt)",
+  "line": 9,
+  "mark": "normal",
+  "start": 28.415,
+  "end": 28.635,
+  "estimated": true
+ },
+ {
+  "text": "Никто",
+  "line": 10,
+  "mark": "normal",
+  "start": 28.935,
+  "end": 29.298,
+  "estimated": true
+ },
+ {
+  "text": "нас",
+  "line": 10,
+  "mark": "normal",
+  "start": 29.298,
+  "end": 29.48,
+  "estimated": true
+ },
+ {
+  "text": "не",
+  "line": 10,
+  "mark": "normal",
+  "start": 29.48,
+  "end": 29.662,
+  "estimated": true
+ },
+ {
+  "text": "видит",
+  "line": 10,
+  "mark": "normal",
+  "start": 29.662,
+  "end": 30.025,
+  "estimated": true
+ },
+ {
+  "text": "на",
+  "line": 10,
+  "mark": "normal",
+  "start": 30.025,
+  "end": 30.207,
+  "estimated": true
+ },
+ {
+  "text": "радаре,",
+  "line": 10,
+  "mark": "accent",
+  "start": 30.207,
+  "end": 30.753,
+  "estimated": true
+ },
+ {
+  "text": "е-е",
+  "line": 10,
+  "mark": "normal",
+  "start": 30.753,
+  "end": 31.116,
+  "estimated": true
+ },
+ {
+  "text": "(Nah)",
+  "line": 10,
+  "mark": "normal",
+  "start": 31.116,
+  "end": 31.336,
+  "estimated": true
+ },
+ {
+  "text": "Помню",
+  "line": 11,
+  "mark": "normal",
+  "start": 31.636,
+  "end": 32.0,
+  "estimated": true
+ },
+ {
+  "text": "было",
+  "line": 11,
+  "mark": "normal",
+  "start": 32.0,
+  "end": 32.364,
+  "estimated": true
+ },
+ {
+  "text": "время,",
+  "line": 11,
+  "mark": "normal",
+  "start": 32.364,
+  "end": 32.727,
+  "estimated": true
+ },
+ {
+  "text": "на",
+  "line": 11,
+  "mark": "normal",
+  "start": 32.727,
+  "end": 32.909,
+  "estimated": true
+ },
+ {
+  "text": "мне",
+  "line": 11,
+  "mark": "normal",
+  "start": 32.909,
+  "end": 33.091,
+  "estimated": true
+ },
+ {
+  "text": "спали,",
+  "line": 11,
+  "mark": "normal",
+  "start": 33.091,
+  "end": 33.455,
+  "estimated": true
+ },
+ {
+  "text": "е-е",
+  "line": 11,
+  "mark": "normal",
+  "start": 33.455,
+  "end": 33.818,
+  "estimated": true
+ },
+ {
+  "text": "(Пф-ф)",
+  "line": 11,
+  "mark": "normal",
+  "start": 33.818,
+  "end": 34.038,
+  "estimated": true
+ },
+ {
+  "text": "Посмотри",
+  "line": 12,
+  "mark": "normal",
+  "start": 34.338,
+  "end": 34.884,
+  "estimated": true
+ },
+ {
+  "text": "на",
+  "line": 12,
+  "mark": "normal",
+  "start": 34.884,
+  "end": 35.065,
+  "estimated": true
+ },
+ {
+  "text": "то,",
+  "line": 12,
+  "mark": "normal",
+  "start": 35.065,
+  "end": 35.247,
+  "estimated": true
+ },
+ {
+  "text": "какие",
+  "line": 12,
+  "mark": "normal",
+  "start": 35.247,
+  "end": 35.793,
+  "estimated": true
+ },
+ {
+  "text": "стали",
+  "line": 12,
+  "mark": "normal",
+  "start": 35.793,
+  "end": 36.156,
+  "estimated": true
+ },
+ {
+  "text": "теперь",
+  "line": 12,
+  "mark": "accent",
+  "start": 36.156,
+  "end": 36.52,
+  "estimated": true
+ },
+ {
+  "text": "(B",
+  "line": 12,
+  "mark": "normal",
+  "start": 36.52,
+  "end": 36.74,
+  "estimated": true
+ },
+ {
+  "text": "Soul!)",
+  "line": 12,
+  "mark": "normal",
+  "start": 36.74,
+  "end": 36.96,
+  "estimated": true
+ }
+]

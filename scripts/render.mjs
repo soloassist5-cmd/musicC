@@ -55,6 +55,11 @@ const ff = (args) => execFileSync('ffmpeg', ['-v', 'error', '-y', ...args], {std
 // re-encode once so the profile/level/faststart are exactly what TikTok likes
 ff(['-i', raw, '-an', '-c:v', 'libx264', '-profile:v', 'high', '-preset', 'slow', '-crf', String(cfg.crf ?? 15),
 	'-pix_fmt', 'yuv420p', '-r', String(data.fps), '-movflags', '+faststart', out(`${cfg.slug ?? 'perestan'}_silent.mp4`)]);
-ff(['-i', out(`${cfg.slug ?? 'perestan'}_silent.mp4`), '-ss', String(data.startTime), '-t', String(data.duration), '-i', path.join(BASE, 'input/demo.mp3'),
-	'-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '256k', '-shortest', '-movflags', '+faststart', out(`${cfg.slug ?? 'perestan'}_preview.mp4`)]);
+const audio = path.join(BASE, 'input/demo.mp3');
+if (fs.existsSync(audio)) {
+	ff(['-i', out(`${cfg.slug ?? 'perestan'}_silent.mp4`), '-ss', String(data.startTime), '-t', String(data.duration), '-i', audio,
+		'-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '256k', '-shortest', '-movflags', '+faststart', out(`${cfg.slug ?? 'perestan'}_preview.mp4`)]);
+} else {
+	console.log('no input/demo.mp3 — preview with sound skipped');
+}
 console.log(`done: ${out(`${cfg.slug ?? 'perestan'}_silent.mp4`)}`);
