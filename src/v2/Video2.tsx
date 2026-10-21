@@ -46,22 +46,23 @@ const Shape: React.FC<{k: number; t: number}> = ({k, t}) => {
 
 const Background: React.FC<{t: number}> = ({t}) => (
 	<AbsoluteFill style={{background: '#F7F3FB', overflow: 'hidden'}}>
-		{BLOBS.map((b, k) => (
-			<div
-				key={k}
-				style={{
-					position: 'absolute',
-					left: b.x * W - b.r / 2 + Math.sin(t * 0.5 + k * 2) * 90,
-					top: b.y * H - b.r / 2 + Math.cos(t * 0.4 + k) * 110,
-					width: b.r,
-					height: b.r,
-					borderRadius: '50%',
-					background: b.c,
-					filter: 'blur(110px)',
-					opacity: 0.95,
-				}}
-			/>
-		))}
+		{BLOBS.map((b, k) => {
+			// soft radial gradient instead of filter: blur() — same look, far cheaper to rasterize without a GPU
+			const r = b.r * 1.6;
+			return (
+				<div
+					key={k}
+					style={{
+						position: 'absolute',
+						left: b.x * W - r / 2 + Math.sin(t * 0.5 + k * 2) * 90,
+						top: b.y * H - r / 2 + Math.cos(t * 0.4 + k) * 110,
+						width: r,
+						height: r,
+						background: `radial-gradient(circle, ${b.c} 0%, ${b.c}cc 28%, ${b.c}00 70%)`,
+					}}
+				/>
+			);
+		})}
 		{Array.from({length: 16}).map((_, k) => (
 			<Shape key={k} k={k} t={t} />
 		))}
@@ -270,7 +271,7 @@ const Wall: React.FC<{w: Word; s: number}> = ({w, s}) => {
 	const reps = Math.ceil((W * 2) / uw) + 2;
 	const bg = ramp(s, 0, 0.08);
 	return (
-		<div style={{position: 'absolute', inset: 0, background: `rgba(247,243,251,${0.9 * bg})`, backdropFilter: `blur(${bg * 20}px)`, overflow: 'hidden'}}>
+		<div style={{position: 'absolute', inset: 0, background: `rgba(247,243,251,${0.94 * bg})`, overflow: 'hidden'}}>
 			{Array.from({length: rows}).map((_, r) => {
 				const delay = r * 0.025;
 				const a = ramp(s, delay, delay + 0.1);
