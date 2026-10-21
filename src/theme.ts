@@ -12,16 +12,20 @@ const FAMILIES: Record<string, string> = {inter: 'Inter', 'jetbrains-mono': 'Jet
 const b64 = (s: string) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0)).buffer;
 
 const fontHandle = delayRender('fonts');
-Promise.all(
-	Object.entries(FONT_DATA).map(([name, data]) => {
-		const m = name.match(/^(inter|jetbrains-mono)-(latin-ext|latin|cyrillic)-(\d+)-normal$/)!;
-		const face = new FontFace(FAMILIES[m[1]], b64(data), {weight: m[3], unicodeRange: RANGES[m[2]]});
-		document.fonts.add(face);
-		return face.load();
-	}),
-)
+const faces = Object.entries(FONT_DATA).map(([name, data]) => {
+	const m = name.match(/^(inter|jetbrains-mono)-(latin-ext|latin|cyrillic)-(\d+)-normal$/)!;
+	const face = new FontFace(FAMILIES[m[1]], b64(data), {weight: m[3], unicodeRange: RANGES[m[2]]});
+	document.fonts.add(face);
+	return face;
+});
+// face.load() occasionally never settles inside a render tab: cap the wait, then check the faces directly
+Promise.race([Promise.all(faces.map((f) => f.load())), new Promise((r) => setTimeout(r, 3000))])
 	.catch((e) => console.error('font load failed', e))
-	.finally(() => continueRender(fontHandle));
+	.finally(() => {
+		const bad = faces.filter((f) => f.status !== 'loaded');
+		if (bad.length) console.error('fonts not loaded:', bad.map((f) => `${f.family} ${f.weight} ${f.status}`).join(', '));
+		continueRender(fontHandle);
+	});
 
 export const C = {
 	ink: '#0B0B10',

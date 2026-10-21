@@ -30,7 +30,8 @@ for (let a = 0; a < data.durationInFrames; a += CHUNK) {
 				pixelFormat: 'yuv420p',
 				muted: true,
 				frameRange: [a, b],
-				concurrency: 2,
+				// one tab: with 2 tabs the background one sometimes stops running page JS and the chunk times out
+				concurrency: 1,
 				timeoutInMilliseconds: 60000,
 				outputLocation: file,
 				browserExecutable,
