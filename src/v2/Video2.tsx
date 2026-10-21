@@ -6,9 +6,10 @@ import {DATA, Timeline, timelineAt, Word} from '../data';
 import {clamp, outBack, outCubic, ramp, SceneProps} from './ui';
 import {CONFETTI_AT as BASE_CONFETTI, SCENES as BASE_SCENES} from './scenes';
 import {DYN_CONFETTI, DYN_SCENES} from './scenes_dyn';
+import {RN_CONFETTI, RN_SCENES} from './scenes_rn';
 
-const SCENES = {...BASE_SCENES, ...DYN_SCENES};
-const CONFETTI_AT: Record<string, number> = {...BASE_CONFETTI, ...DYN_CONFETTI};
+const SCENES = {...BASE_SCENES, ...DYN_SCENES, ...RN_SCENES};
+const CONFETTI_AT: Record<string, number> = {...BASE_CONFETTI, ...DYN_CONFETTI, ...RN_CONFETTI};
 
 const fps = DATA.fps;
 const STAGE_TOP = 660;
