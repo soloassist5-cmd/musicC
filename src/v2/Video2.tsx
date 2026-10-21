@@ -85,7 +85,7 @@ const Hud: React.FC<{tl: Timeline; scene: number}> = ({tl, scene}) => {
 	return (
 		<>
 			<div style={{...txt, left: SAFE.left, top: SAFE.top + 10}}>
-				MADK1D // {DATA.title} // DEMO · SC {pad(scene + 1)}/{pad(DATA.scenes.length)}
+				{DATA.artist} // {DATA.title} // DEMO · SC {pad(scene + 1)}/{pad(DATA.scenes.length)}
 			</div>
 			<div style={{...txt, right: W - SAFE.right, top: SAFE.top + 10}}>
 				<span style={{color: C.red, opacity: tl.t % 1 < 0.5 ? 1 : 0.25}}>●</span> REC {tc}
@@ -391,7 +391,7 @@ export const Video2: React.FC = () => {
 			<Background t={tl.t} />
 			{intro && (
 				<div style={{position: 'absolute', left: SAFE.left, top: TEXT_TOP, opacity: 1 - ramp(tl.t, 0.3, 0.45)}}>
-					<div style={{fontFamily: FONT, fontWeight: 800, fontSize: 104, color: C.ink, letterSpacing: '-0.03em'}}>madk1d</div>
+					<div style={{fontFamily: FONT, fontWeight: 800, fontSize: 104, color: C.ink, letterSpacing: '-0.03em'}}>{DATA.artist.toLocaleLowerCase('ru-RU')}</div>
 					<div style={{display: 'inline-block', marginTop: 10, padding: '6px 22px', borderRadius: 16, background: MARKERS[1], fontFamily: FONT, fontWeight: 800, fontSize: 88}}>{DATA.title.charAt(0) + DATA.title.slice(1).toLocaleLowerCase('ru-RU')}</div>
 				</div>
 			)}

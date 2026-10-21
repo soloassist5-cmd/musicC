@@ -10,6 +10,7 @@ export type Data = {
 	durationInFrames: number;
 	bpm: number;
 	title: string;
+	artist: string;
 	lines: string[];
 	scenes: Scene[];
 	words: Word[];

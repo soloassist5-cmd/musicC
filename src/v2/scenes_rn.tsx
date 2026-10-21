@@ -206,7 +206,7 @@ const Ko: React.FC<SceneProps> = ({p, sinceWord}) => {
 		<Card y={30} h={620} style={{background: 'linear-gradient(180deg,#1A1A24,#2E1A3A)'}}>
 			<Row gap={16} style={{position: 'absolute', left: 30, right: 30, top: 34, justifyContent: 'space-between'}}>
 				<Col gap={8}>
-					<T s={26} w={800} c="#fff">TOXIS</T>
+					<T s={26} w={800} c="#fff">TOXI$</T>
 					<Bar w={300} h={20} v={1} c={C.green} bg="rgba(255,255,255,0.15)" />
 				</Col>
 				<Col gap={8} style={{alignItems: 'flex-end'}}>
@@ -380,7 +380,7 @@ const Sleep: React.FC<SceneProps> = ({p, t}) => {
 			<Row gap={24} style={{position: 'absolute', left: 40, top: 160}}>
 				<Avatar size={150} letter="T" bg="linear-gradient(160deg,#B8BDCB,#8E94A6)" />
 				<Col gap={8}>
-					<T s={40} w={800} c={C.sub}>toxis</T>
+					<T s={40} w={800} c={C.sub}>toxi$</T>
 					<Row gap={26}>
 						{[
 							['12', 'подписчиков'],
@@ -433,7 +433,7 @@ const Glowup: React.FC<SceneProps> = ({p}) => {
 				<Avatar size={150} letter="T" bg="linear-gradient(160deg,#FF8A3D,#FF3B30)" />
 				<Col gap={8}>
 					<Row gap={10}>
-						<T s={40} w={800}>toxis</T>
+						<T s={40} w={800}>toxi$</T>
 						<div style={{width: 36, height: 36, borderRadius: 18, background: C.blue, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
 							<T s={22} c="#fff">✓</T>
 						</div>

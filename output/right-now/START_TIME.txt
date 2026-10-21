@@ -1,4 +1,4 @@
 start_in_track_s=0.000
-duration_s=37.967
+duration_s=24.467
 offset_ms=0
 timings=ESTIMATED (no audio): text will NOT match the sound exactly

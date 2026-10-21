@@ -88,6 +88,7 @@ export function buildData() {
 		durationInFrames,
 		bpm: audio.bpm,
 		title: cfg.title ?? 'ПЕРЕСТАНЬ',
+		artist: cfg.artist ?? 'MADK1D',
 		lines,
 		scenes,
 		words,
