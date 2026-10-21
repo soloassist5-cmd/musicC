@@ -391,7 +391,7 @@ export const Video2: React.FC = () => {
 			<Background t={tl.t} />
 			{intro && (
 				<div style={{position: 'absolute', left: SAFE.left, top: TEXT_TOP, opacity: 1 - ramp(tl.t, 0.3, 0.45)}}>
-					<div style={{fontFamily: FONT, fontWeight: 800, fontSize: 104, color: C.ink, letterSpacing: '-0.03em'}}>{DATA.artist.toLocaleLowerCase('ru-RU')}</div>
+					<div style={{fontFamily: FONT, fontWeight: 800, fontSize: 104, color: C.ink, letterSpacing: '-0.03em'}}>{DATA.artist}</div>
 					<div style={{display: 'inline-block', marginTop: 10, padding: '6px 22px', borderRadius: 16, background: MARKERS[1], fontFamily: FONT, fontWeight: 800, fontSize: 88}}>{DATA.title.charAt(0) + DATA.title.slice(1).toLocaleLowerCase('ru-RU')}</div>
 				</div>
 			)}
