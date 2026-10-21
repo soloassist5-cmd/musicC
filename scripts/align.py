@@ -12,9 +12,13 @@ from pathlib import Path
 
 import numpy as np
 
+import os
+
 ROOT = Path(__file__).resolve().parent.parent
-INP = ROOT / "input"
-BUILD = ROOT / "build"
+# TRACK=name -> tracks/<name>/ ; empty -> project root (Перестань)
+BASE = ROOT / "tracks" / os.environ["TRACK"] if os.environ.get("TRACK") else ROOT
+INP = BASE / "input"
+BUILD = ROOT / "build" / (os.environ.get("TRACK") or "perestan")
 
 TR = dict(zip("абвгдеёжзийклмнопрстуфхцчшщъыьэюя",
               ["a", "b", "v", "g", "d", "e", "yo", "zh", "z", "i", "y", "k", "l", "m", "n", "o", "p", "r", "s", "t",
@@ -99,7 +103,7 @@ def main():
     for f in (audio, lyr):
         if not f.exists():
             sys.exit(f"missing {f}")
-    BUILD.mkdir(exist_ok=True)
+    BUILD.mkdir(parents=True, exist_ok=True)
 
     lines, tokens = parse_lyrics(lyr)
     voc = separate(audio)
@@ -132,7 +136,7 @@ def main():
         if len(why) >= 2 or any(w.startswith(("aligners", "starts", "stretched")) for w in why):
             sus.append(f"#{k:02d} line {t['line'] + 1} {s:6.2f}s  {t['text']}: " + "; ".join(why))
 
-    (ROOT / "timings.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    (BASE / "timings.json").write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
     (BUILD / "suspicious.txt").write_text("\n".join(sus) + "\n", encoding="utf-8")
     print("\n".join(sus) or "no suspicious words")
 
@@ -142,7 +146,7 @@ def main():
     hop = sr // 60
     rms = librosa.feature.rms(y=y, frame_length=hop * 2, hop_length=hop)[0]
     rms = rms / (np.percentile(rms, 98) + 1e-9)
-    (ROOT / "audio.json").write_text(json.dumps({
+    (BASE / "audio.json").write_text(json.dumps({
         "bpm": int(round(float(np.atleast_1d(tempo)[0]))), "duration": round(len(y) / sr, 3),
         "rms60": [round(float(min(v, 1.0)), 3) for v in rms],
     }), encoding="utf-8")

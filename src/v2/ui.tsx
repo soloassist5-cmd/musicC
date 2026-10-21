@@ -19,6 +19,7 @@ export type SceneProps = {
 	wi: number; // index of current word inside the scene
 	word: string;
 	rms: (back?: number) => number;
+	opt: Record<string, string>;
 };
 
 export const Card: React.FC<{w?: number; h?: number; x?: number; y?: number; r?: number; style?: React.CSSProperties; children?: React.ReactNode}> = ({

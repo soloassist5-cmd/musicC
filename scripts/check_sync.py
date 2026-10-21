@@ -7,7 +7,13 @@ from pathlib import Path
 
 import numpy as np
 
+import os
+
 ROOT = Path(__file__).resolve().parent.parent
+TRACK = os.environ.get("TRACK", "")
+OUT = ROOT / "output" / TRACK if TRACK else ROOT / "output"
+CFG = json.loads(((ROOT / "tracks" / TRACK if TRACK else ROOT) / "config.json").read_text(encoding="utf-8"))
+VIDEO = OUT / f"{CFG.get('slug', 'perestan')}_silent.mp4"
 data = json.loads((ROOT / "src/generated/data.json").read_text(encoding="utf-8"))
 fps = data["fps"]
 idx = [int(a) for a in sys.argv[1:]] or [2, 18, 34, 47]
@@ -17,7 +23,7 @@ for i in idx:
     w = data["words"][i]
     f0 = round(w["start"] * fps)
     a, b = max(0, f0 - 6), f0 + 6
-    raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{a / fps:.4f}", "-i", str(ROOT / "output/perestan_silent.mp4"),
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-ss", f"{a / fps:.4f}", "-i", str(VIDEO),
                           "-frames:v", str(b - a), "-vf", f"crop=1080:480:0:280,scale={W}:{H},format=gray",
                           "-f", "rawvideo", "-"], capture_output=True, check=True).stdout
     fr = np.frombuffer(raw, np.uint8).reshape(-1, H, W).astype(float)

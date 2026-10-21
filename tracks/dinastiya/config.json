@@ -1,0 +1,21 @@
+{
+  "title": "ДИНАСТИЯ",
+  "slug": "dinastiya",
+  "offset_ms": 0,
+  "lead_in": 0.5,
+  "tail": 1.0,
+  "fps": 60,
+  "crf": 15,
+  "style_overrides": {},
+  "scene_plan": [
+    [0, 0, "crown"],
+    [1, 0, "million"], [1, 2, "champion"], [1, 6, "face"],
+    [2, 0, "creator", {"name": "Вильчинский", "role": "режиссёр"}], [2, 5, "camera"],
+    [3, 0, "ticket", {"city": "УФА"}], [3, 3, "record", {"mic": "Samson"}],
+    [4, 0, "chatmom"], [4, 4, "trashmic"],
+    [5, 0, "champion"], [5, 4, "face"],
+    [6, 0, "creator", {"name": "creator", "role": "автор"}], [6, 5, "camera"],
+    [7, 0, "ticket", {"city": "МОСКВА"}], [7, 3, "record", {"mic": "Samson"}],
+    [8, 0, "chatmom"], [8, 4, "trashmic"]
+  ]
+}

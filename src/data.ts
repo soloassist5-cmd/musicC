@@ -2,13 +2,14 @@ import raw from './generated/data.json';
 
 export type WordStyle = 'solid' | 'outline' | 'underline' | 'glitch' | 'speed' | 'typewriter' | 'accent' | 'wall';
 export type Word = {i: number; text: string; line: number; style: WordStyle; start: number; end: number};
-export type Scene = {kind: string; line: number; start: number; firstWord: number};
+export type Scene = {kind: string; line: number; start: number; firstWord: number; opt: Record<string, string>};
 export type Data = {
 	fps: number;
 	startTime: number;
 	duration: number;
 	durationInFrames: number;
 	bpm: number;
+	title: string;
 	lines: string[];
 	scenes: Scene[];
 	words: Word[];

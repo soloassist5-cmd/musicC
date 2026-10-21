@@ -4,7 +4,11 @@ import {measureText} from '@remotion/layout-utils';
 import {C, CONFETTI, FONT, H, MARKERS, MONO, rand, SAFE, SAFE_W, W} from '../theme';
 import {DATA, Timeline, timelineAt, Word} from '../data';
 import {clamp, outBack, outCubic, ramp, SceneProps} from './ui';
-import {CONFETTI_AT, SCENES} from './scenes';
+import {CONFETTI_AT as BASE_CONFETTI, SCENES as BASE_SCENES} from './scenes';
+import {DYN_CONFETTI, DYN_SCENES} from './scenes_dyn';
+
+const SCENES = {...BASE_SCENES, ...DYN_SCENES};
+const CONFETTI_AT: Record<string, number> = {...BASE_CONFETTI, ...DYN_CONFETTI};
 
 const fps = DATA.fps;
 const STAGE_TOP = 660;
@@ -79,7 +83,7 @@ const Hud: React.FC<{tl: Timeline; scene: number}> = ({tl, scene}) => {
 	return (
 		<>
 			<div style={{...txt, left: SAFE.left, top: SAFE.top + 10}}>
-				MADK1D // ПЕРЕСТАНЬ // DEMO · SC {pad(scene + 1)}/{pad(DATA.scenes.length)}
+				MADK1D // {DATA.title} // DEMO · SC {pad(scene + 1)}/{pad(DATA.scenes.length)}
 			</div>
 			<div style={{...txt, right: W - SAFE.right, top: SAFE.top + 10}}>
 				<span style={{color: C.red, opacity: tl.t % 1 < 0.5 ? 1 : 0.25}}>●</span> REC {tc}
@@ -327,6 +331,7 @@ const sceneProps = (k: number, tl: Timeline): SceneProps => {
 		wi: Math.max(0, inScene.length - 1),
 		word: cur.text,
 		rms: (back = 0) => DATA.rms[Math.max(0, tl.frame - back)] ?? 0,
+		opt: sc.opt ?? {},
 	};
 };
 
@@ -385,7 +390,7 @@ export const Video2: React.FC = () => {
 			{intro && (
 				<div style={{position: 'absolute', left: SAFE.left, top: TEXT_TOP, opacity: 1 - ramp(tl.t, 0.3, 0.45)}}>
 					<div style={{fontFamily: FONT, fontWeight: 800, fontSize: 104, color: C.ink, letterSpacing: '-0.03em'}}>madk1d</div>
-					<div style={{display: 'inline-block', marginTop: 10, padding: '6px 22px', borderRadius: 16, background: MARKERS[1], fontFamily: FONT, fontWeight: 800, fontSize: 88}}>Перестань</div>
+					<div style={{display: 'inline-block', marginTop: 10, padding: '6px 22px', borderRadius: 16, background: MARKERS[1], fontFamily: FONT, fontWeight: 800, fontSize: 88}}>{DATA.title.charAt(0) + DATA.title.slice(1).toLocaleLowerCase('ru-RU')}</div>
 				</div>
 			)}
 			<Stage tl={tl} />

@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {renderStill} from '@remotion/renderer';
-import {buildData} from './build-data.mjs';
+import {buildData, OUT} from './build-data.mjs';
 import {ROOT, prepare, browserExecutable} from './remotion.mjs';
 
 const data = buildData();
@@ -36,7 +36,7 @@ if (!extra.length) {
 		files.map((_, i) => `[${i}]scale=540:960,drawbox=t=2:c=black@0.3[s${i}]`).join(';') +
 			';' + files.map((_, i) => `[s${i}]`).join('') + `xstack=inputs=${files.length}:layout=` +
 			files.map((_, i) => `${(i % cols) * 540}_${Math.floor(i / cols) * 960}`).join('|') + `:fill=white`,
-		path.join(ROOT, 'output/contact_sheet.png'),
+		path.join(OUT, 'contact_sheet.png'),
 	]);
-	console.log('output/contact_sheet.png', rows, 'rows');
+	console.log(path.join(OUT, 'contact_sheet.png'), rows, 'rows');
 }

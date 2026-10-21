@@ -5,7 +5,11 @@ import {fileURLToPath} from 'node:url';
 import {execFileSync} from 'node:child_process';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const read = (f) => JSON.parse(fs.readFileSync(path.join(ROOT, f), 'utf8'));
+// TRACK=name -> tracks/<name>/ and output/<name>/ ; empty -> project root and output/
+export const TRACK = process.env.TRACK || '';
+export const BASE = TRACK ? path.join(ROOT, 'tracks', TRACK) : ROOT;
+export const OUT = TRACK ? path.join(ROOT, 'output', TRACK) : path.join(ROOT, 'output');
+const read = (f) => JSON.parse(fs.readFileSync(path.join(BASE, f), 'utf8'));
 
 const embedFonts = () => execFileSync(process.execPath, [path.join(ROOT, 'scripts/embed-fonts.mjs')], {stdio: 'inherit'});
 
@@ -27,7 +31,7 @@ export function buildData() {
 	const fps = cfg.fps;
 	const off = (cfg.offset_ms || 0) / 1000;
 	const lines = fs
-		.readFileSync(path.join(ROOT, 'input/lyrics.txt'), 'utf8')
+		.readFileSync(path.join(BASE, 'input/lyrics.txt'), 'utf8')
 		.split(/\r?\n/)
 		.map((l) => l.trim())
 		.filter(Boolean);
@@ -50,7 +54,7 @@ export function buildData() {
 		prev = style;
 		return {
 			i,
-			text: w.text.replace(/[«»"]/g, '').replace(/[,.!?…:;]+$/u, ''),
+			text: w.text.replace(/[«»"()]/g, '').replace(/[,.!?…:;]+$/u, ''),
 			line: w.line,
 			style,
 			// seconds relative to video start
@@ -60,15 +64,15 @@ export function buildData() {
 	});
 
 	// scene plan: [line, wordInLine, kind] -> absolute start times; lines without a plan cycle through SCENES
-	const plan = (cfg.scene_plan ?? []).map(([line, wi, kind]) => ({line, wi, kind}));
+	const plan = (cfg.scene_plan ?? []).map(([line, wi, kind, opt]) => ({line, wi, kind, opt}));
 	lines.forEach((_, li) => {
 		if (!plan.some((p) => p.line === li)) plan.push({line: li, wi: 0, kind: SCENES[li % SCENES.length]});
 	});
 	const scenes = plan
-		.map(({line, wi, kind}) => {
+		.map(({line, wi, kind, opt}) => {
 			const lw = words.filter((w) => w.line === line);
 			const w = lw[Math.min(wi, lw.length - 1)];
-			return {kind, line, start: w ? w.start : 0, firstWord: w ? w.i : 0};
+			return {kind, line, start: w ? w.start : 0, firstWord: w ? w.i : 0, opt: opt ?? {}};
 		})
 		.sort((a, b) => a.start - b.start);
 	const f0 = Math.round(startTime * 60);
@@ -83,6 +87,7 @@ export function buildData() {
 		duration: +(durationInFrames / fps).toFixed(3),
 		durationInFrames,
 		bpm: audio.bpm,
+		title: cfg.title ?? 'ПЕРЕСТАНЬ',
 		lines,
 		scenes,
 		words,
@@ -90,9 +95,9 @@ export function buildData() {
 	};
 	fs.mkdirSync(path.join(ROOT, 'src/generated'), {recursive: true});
 	fs.writeFileSync(path.join(ROOT, 'src/generated/data.json'), JSON.stringify(data));
-	fs.mkdirSync(path.join(ROOT, 'output'), {recursive: true});
+	fs.mkdirSync(OUT, {recursive: true});
 	fs.writeFileSync(
-		path.join(ROOT, 'output/START_TIME.txt'),
+		path.join(OUT, 'START_TIME.txt'),
 		`start_in_track_s=${data.startTime.toFixed(3)}\nduration_s=${data.duration.toFixed(3)}\noffset_ms=${cfg.offset_ms}\n`,
 	);
 	return data;

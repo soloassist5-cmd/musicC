@@ -1,0 +1,614 @@
+[
+ {
+  "text": "Династия!",
+  "line": 0,
+  "mark": "accent",
+  "start": 0.48,
+  "end": 1.822,
+  "score": 0.445,
+  "stablets_start": 1.08
+ },
+ {
+  "text": "Первый",
+  "line": 1,
+  "mark": "normal",
+  "start": 2.082,
+  "end": 2.382,
+  "score": 0.112,
+  "stablets_start": 1.98
+ },
+ {
+  "text": "миллион,",
+  "line": 1,
+  "mark": "accent",
+  "start": 2.442,
+  "end": 3.383,
+  "score": 0.079,
+  "stablets_start": 2.5
+ },
+ {
+  "text": "я",
+  "line": 1,
+  "mark": "normal",
+  "start": 3.403,
+  "end": 3.523,
+  "score": 0.026,
+  "stablets_start": 3.18
+ },
+ {
+  "text": "первый",
+  "line": 1,
+  "mark": "normal",
+  "start": 3.583,
+  "end": 3.903,
+  "score": 0.013,
+  "stablets_start": 3.62
+ },
+ {
+  "text": "чемпион,",
+  "line": 1,
+  "mark": "accent",
+  "start": 3.964,
+  "end": 4.584,
+  "score": 0.012,
+  "stablets_start": 4.0
+ },
+ {
+  "text": "и",
+  "line": 1,
+  "mark": "normal",
+  "start": 4.624,
+  "end": 4.684,
+  "score": 0.004,
+  "stablets_start": 4.6
+ },
+ {
+  "text": "мне",
+  "line": 1,
+  "mark": "normal",
+  "start": 4.684,
+  "end": 4.804,
+  "score": 0.004,
+  "stablets_start": 4.8
+ },
+ {
+  "text": "стянуло",
+  "line": 1,
+  "mark": "normal",
+  "start": 4.944,
+  "end": 5.405,
+  "score": 0.002,
+  "stablets_start": 5.04
+ },
+ {
+  "text": "кожу",
+  "line": 1,
+  "mark": "normal",
+  "start": 5.545,
+  "end": 5.825,
+  "score": 0.008,
+  "stablets_start": 5.68
+ },
+ {
+  "text": "ртом",
+  "line": 1,
+  "mark": "normal",
+  "start": 5.885,
+  "end": 6.166,
+  "score": 0.001,
+  "stablets_start": 6.04
+ },
+ {
+  "text": "Вильчинский",
+  "line": 2,
+  "mark": "normal",
+  "start": 6.506,
+  "end": 7.006,
+  "score": 0.005,
+  "stablets_start": 6.42
+ },
+ {
+  "text": "знает",
+  "line": 2,
+  "mark": "normal",
+  "start": 7.026,
+  "end": 7.387,
+  "score": 0.001,
+  "stablets_start": 7.06
+ },
+ {
+  "text": "толк",
+  "line": 2,
+  "mark": "normal",
+  "start": 7.447,
+  "end": 7.667,
+  "score": 0.006,
+  "stablets_start": 7.48
+ },
+ {
+  "text": "в",
+  "line": 2,
+  "mark": "normal",
+  "start": 7.687,
+  "end": 7.707,
+  "score": 0.001,
+  "stablets_start": 7.78
+ },
+ {
+  "text": "этом,",
+  "line": 2,
+  "mark": "normal",
+  "start": 7.707,
+  "end": 7.987,
+  "score": 0.001,
+  "stablets_start": 7.96
+ },
+ {
+  "text": "мы",
+  "line": 2,
+  "mark": "normal",
+  "start": 8.047,
+  "end": 8.167,
+  "score": 0.004,
+  "stablets_start": 8.08
+ },
+ {
+  "text": "снимем",
+  "line": 2,
+  "mark": "normal",
+  "start": 8.187,
+  "end": 8.548,
+  "score": 0.012,
+  "stablets_start": 8.26
+ },
+ {
+  "text": "на",
+  "line": 2,
+  "mark": "normal",
+  "start": 8.628,
+  "end": 8.748,
+  "score": 0.021,
+  "stablets_start": 8.76
+ },
+ {
+  "text": "iPhone",
+  "line": 2,
+  "mark": "normal",
+  "start": 8.868,
+  "end": 9.529,
+  "score": 0.004,
+  "stablets_start": 8.94
+ },
+ {
+  "text": "Концерты",
+  "line": 3,
+  "mark": "normal",
+  "start": 9.569,
+  "end": 10.089,
+  "score": 0.012,
+  "stablets_start": 9.4
+ },
+ {
+  "text": "из",
+  "line": 3,
+  "mark": "normal",
+  "start": 10.189,
+  "end": 10.369,
+  "score": 0.016,
+  "stablets_start": 10.18
+ },
+ {
+  "text": "Уфы,",
+  "line": 3,
+  "mark": "normal",
+  "start": 10.409,
+  "end": 10.629,
+  "score": 0.014,
+  "stablets_start": 10.44
+ },
+ {
+  "text": "мы",
+  "line": 3,
+  "mark": "normal",
+  "start": 10.73,
+  "end": 10.85,
+  "score": 0.01,
+  "stablets_start": 10.74
+ },
+ {
+  "text": "пишем",
+  "line": 3,
+  "mark": "normal",
+  "start": 10.95,
+  "end": 11.29,
+  "score": 0.013,
+  "stablets_start": 10.92
+ },
+ {
+  "text": "это",
+  "line": 3,
+  "mark": "normal",
+  "start": 11.41,
+  "end": 11.61,
+  "score": 0.002,
+  "stablets_start": 11.44
+ },
+ {
+  "text": "на",
+  "line": 3,
+  "mark": "normal",
+  "start": 11.71,
+  "end": 11.83,
+  "score": 0.002,
+  "stablets_start": 11.68
+ },
+ {
+  "text": "Samson",
+  "line": 3,
+  "mark": "normal",
+  "start": 11.891,
+  "end": 12.351,
+  "score": 0.006,
+  "stablets_start": 11.96
+ },
+ {
+  "text": "Я",
+  "line": 4,
+  "mark": "normal",
+  "start": 12.351,
+  "end": 12.471,
+  "score": 0.015,
+  "stablets_start": 12.34
+ },
+ {
+  "text": "помню,",
+  "line": 4,
+  "mark": "normal",
+  "start": 12.511,
+  "end": 12.751,
+  "score": 0.01,
+  "stablets_start": 12.56
+ },
+ {
+  "text": "мама",
+  "line": 4,
+  "mark": "normal",
+  "start": 12.912,
+  "end": 13.172,
+  "score": 0.028,
+  "stablets_start": 12.88
+ },
+ {
+  "text": "говорила:",
+  "line": 4,
+  "mark": "normal",
+  "start": 13.232,
+  "end": 13.872,
+  "score": 0.005,
+  "stablets_start": 13.26
+ },
+ {
+  "text": "\"Выкинь",
+  "line": 4,
+  "mark": "normal",
+  "start": 14.053,
+  "end": 14.393,
+  "score": 0.013,
+  "stablets_start": 14.04
+ },
+ {
+  "text": "нахуй",
+  "line": 4,
+  "mark": "normal",
+  "start": 14.453,
+  "end": 14.793,
+  "score": 0.013,
+  "stablets_start": 14.64
+ },
+ {
+  "text": "микрофон\"",
+  "line": 4,
+  "mark": "accent",
+  "start": 14.813,
+  "end": 15.494,
+  "score": 0.055,
+  "stablets_start": 14.86
+ },
+ {
+  "text": "Я",
+  "line": 5,
+  "mark": "normal",
+  "start": 15.794,
+  "end": 15.914,
+  "score": 0.653,
+  "stablets_start": 15.6
+ },
+ {
+  "text": "первый",
+  "line": 5,
+  "mark": "normal",
+  "start": 15.974,
+  "end": 16.275,
+  "score": 0.51,
+  "stablets_start": 16.02
+ },
+ {
+  "text": "чемпион,",
+  "line": 5,
+  "mark": "normal",
+  "start": 16.355,
+  "end": 16.935,
+  "score": 0.652,
+  "stablets_start": 16.36
+ },
+ {
+  "text": "и",
+  "line": 5,
+  "mark": "normal",
+  "start": 16.975,
+  "end": 17.035,
+  "score": 0.079,
+  "stablets_start": 16.96
+ },
+ {
+  "text": "мне",
+  "line": 5,
+  "mark": "normal",
+  "start": 17.035,
+  "end": 17.235,
+  "score": 0.56,
+  "stablets_start": 17.1
+ },
+ {
+  "text": "стянуло",
+  "line": 5,
+  "mark": "normal",
+  "start": 17.255,
+  "end": 17.776,
+  "score": 0.543,
+  "stablets_start": 17.26
+ },
+ {
+  "text": "кожу",
+  "line": 5,
+  "mark": "normal",
+  "start": 17.896,
+  "end": 18.156,
+  "score": 0.739,
+  "stablets_start": 17.9
+ },
+ {
+  "text": "ртом",
+  "line": 5,
+  "mark": "normal",
+  "start": 18.196,
+  "end": 18.497,
+  "score": 0.749,
+  "stablets_start": 18.22
+ },
+ {
+  "text": "creator",
+  "line": 6,
+  "mark": "normal",
+  "start": 18.857,
+  "end": 19.357,
+  "score": 0.738,
+  "stablets_start": 18.86
+ },
+ {
+  "text": "знает",
+  "line": 6,
+  "mark": "normal",
+  "start": 19.417,
+  "end": 19.778,
+  "score": 0.627,
+  "stablets_start": 19.74
+ },
+ {
+  "text": "толк",
+  "line": 6,
+  "mark": "normal",
+  "start": 19.838,
+  "end": 20.038,
+  "score": 0.479,
+  "stablets_start": 19.84
+ },
+ {
+  "text": "в",
+  "line": 6,
+  "mark": "normal",
+  "start": 20.058,
+  "end": 20.078,
+  "score": 0.014,
+  "stablets_start": 20.16
+ },
+ {
+  "text": "этом,",
+  "line": 6,
+  "mark": "normal",
+  "start": 20.078,
+  "end": 20.358,
+  "score": 0.399,
+  "stablets_start": 20.3
+ },
+ {
+  "text": "мы",
+  "line": 6,
+  "mark": "normal",
+  "start": 20.398,
+  "end": 20.518,
+  "score": 0.1,
+  "stablets_start": 20.4
+ },
+ {
+  "text": "снимем",
+  "line": 6,
+  "mark": "normal",
+  "start": 20.518,
+  "end": 20.919,
+  "score": 0.366,
+  "stablets_start": 20.66
+ },
+ {
+  "text": "на",
+  "line": 6,
+  "mark": "normal",
+  "start": 20.979,
+  "end": 21.099,
+  "score": 0.638,
+  "stablets_start": 21.1
+ },
+ {
+  "text": "iPhone",
+  "line": 6,
+  "mark": "normal",
+  "start": 21.199,
+  "end": 21.639,
+  "score": 0.13,
+  "stablets_start": 21.34
+ },
+ {
+  "text": "(yeah)",
+  "line": 6,
+  "mark": "normal",
+  "start": 21.639,
+  "end": 21.94,
+  "score": 0.002,
+  "stablets_start": 21.96
+ },
+ {
+  "text": "Концерты",
+  "line": 7,
+  "mark": "normal",
+  "start": 21.98,
+  "end": 22.48,
+  "score": 0.711,
+  "stablets_start": 22.24
+ },
+ {
+  "text": "из",
+  "line": 7,
+  "mark": "normal",
+  "start": 22.58,
+  "end": 22.7,
+  "score": 0.592,
+  "stablets_start": 22.54
+ },
+ {
+  "text": "Москвы,",
+  "line": 7,
+  "mark": "normal",
+  "start": 22.76,
+  "end": 23.061,
+  "score": 0.469,
+  "stablets_start": 22.76
+ },
+ {
+  "text": "мы",
+  "line": 7,
+  "mark": "normal",
+  "start": 23.141,
+  "end": 23.261,
+  "score": 0.346,
+  "stablets_start": 23.2
+ },
+ {
+  "text": "пишем",
+  "line": 7,
+  "mark": "normal",
+  "start": 23.321,
+  "end": 23.741,
+  "score": 0.723,
+  "stablets_start": 23.3
+ },
+ {
+  "text": "это",
+  "line": 7,
+  "mark": "normal",
+  "start": 23.781,
+  "end": 23.981,
+  "score": 0.618,
+  "stablets_start": 23.8
+ },
+ {
+  "text": "на",
+  "line": 7,
+  "mark": "normal",
+  "start": 24.041,
+  "end": 24.182,
+  "score": 0.784,
+  "stablets_start": 24.08
+ },
+ {
+  "text": "Samson",
+  "line": 7,
+  "mark": "normal",
+  "start": 24.262,
+  "end": 24.622,
+  "score": 0.904,
+  "stablets_start": 24.3
+ },
+ {
+  "text": "Я",
+  "line": 8,
+  "mark": "normal",
+  "start": 24.702,
+  "end": 24.822,
+  "score": 0.956,
+  "stablets_start": 24.66
+ },
+ {
+  "text": "помню,",
+  "line": 8,
+  "mark": "normal",
+  "start": 24.862,
+  "end": 25.122,
+  "score": 0.595,
+  "stablets_start": 24.88
+ },
+ {
+  "text": "мама",
+  "line": 8,
+  "mark": "normal",
+  "start": 25.263,
+  "end": 25.503,
+  "score": 0.792,
+  "stablets_start": 25.26
+ },
+ {
+  "text": "говорила:",
+  "line": 8,
+  "mark": "normal",
+  "start": 25.583,
+  "end": 26.303,
+  "score": 0.593,
+  "stablets_start": 25.58
+ },
+ {
+  "text": "\"Выкинь",
+  "line": 8,
+  "mark": "normal",
+  "start": 26.444,
+  "end": 26.724,
+  "score": 0.443,
+  "stablets_start": 26.42
+ },
+ {
+  "text": "нахуй",
+  "line": 8,
+  "mark": "normal",
+  "start": 26.784,
+  "end": 27.064,
+  "score": 0.508,
+  "stablets_start": 26.96
+ },
+ {
+  "text": "микрофон\"",
+  "line": 8,
+  "mark": "wall",
+  "start": 27.184,
+  "end": 27.785,
+  "score": 0.611,
+  "stablets_start": 27.18
+ }
+]
